@@ -21,7 +21,7 @@ The greatest JavaScript generator
 ### 2. Generates a JSON/yaml
 * Create a JSON and store it in a Hash Table. No need to login.
 
-### Run `npx aark-gen <hash>`
+### 3. Run `npx aark-gen <hash>`
 * Looks for the hash in database, retrieves the config and generates the files.
 * User can also use a local config
 
