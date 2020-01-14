@@ -1,0 +1,3 @@
+{
+  "runtimeArgs": ["-r", "flow-remove-types/register"]
+}

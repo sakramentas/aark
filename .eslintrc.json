@@ -1,0 +1,3 @@
+{
+  "extends": ["@aark/eslint-config"]
+}

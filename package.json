@@ -1,0 +1,24 @@
+{
+  "name": "@aark/root",
+  "version": "0.0.1",
+  "description": "The greatest JavaScript Generator",
+  "main": "script",
+  "repository": "https://github.com/sakramentas/aark",
+  "author": "Lucas Sacramento",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  },
+  "dependencies": {
+    "@aark/eslint-config": "0.0.1",
+    "lerna": "^3.20.2"
+  },
+  "workspaces": [
+    "packages/**",
+    "services/**"
+  ],
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
