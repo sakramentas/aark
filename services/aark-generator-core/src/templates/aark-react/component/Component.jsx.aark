@@ -1,0 +1,20 @@
+import react, { useState } from 'react';
+import propTypes from 'prop-types';
+
+export const ${COMPONENT_NAME} = props => {
+  const [state, setState] = useState('Sample Component');
+
+  return (
+    <div className="${COMPONENT_NAME}">
+      {state}
+    </div>
+  )
+};
+
+${COMPONENT_NAME}.propTypes = {
+  prop1: PropTypes.string,
+};
+
+${COMPONENT_NAME}.defaultProps = {
+  prop1: 'prop1 sample',
+};
