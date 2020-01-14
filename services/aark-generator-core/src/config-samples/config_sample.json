@@ -1,0 +1,15 @@
+{
+    "version": "0.0.1",
+    "structure": {
+      "test-folder": {
+				"components": {
+					"template": "aark-react-template",
+					"files": [
+						{
+							"filename": "Component.jsx"
+						}
+					]
+				}
+			}
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "type": "project",
+  "variant": "monorepo",
+  "structure": [
+    [
+      "test-folder/components",
+      {
+        "type": "react-component",
+        "template": "aark-react/component",
+        "files": ["Component.jsx", "index.js"],
+        "variables": {
+          "COMPONENT_NAME": "Counter"
+        }
+      }
+		]
+  ]
+}

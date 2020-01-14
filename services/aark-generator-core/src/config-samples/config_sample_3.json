@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "structure": [
+    [
+      "test-folder/components",
+      {
+        "type": "folder",
+        "template": "aark-react-template",
+        "files": ["Component.jsx", "index.js"],
+        "content": "const blabla = () => {}"
+      }
+		],
+		[
+      "test-folder/components/__tests__",
+      {
+        "file-template": "aark-react-test-template",
+        "files": ["Component.test.jsx"]
+      }
+    ],
+    "another-folder/AnotherComponent.jsx",
+    [
+      "test-folder/components/__tests__",
+      {
+        "template": "aark-react-test-template",
+        "files": ["Component.test.jsx"]
+      }
+    ]
+  ]
+}
