@@ -1,0 +1,12 @@
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+
+import { <% COMPONENT_NAME %> } from '..';
+
+storiesOf('<% COMPONENT_NAME %>', module)
+  .addDecorator(withKnobs)
+  .add('<% COMPONENT_NAME %>', () => {
+    return <<% COMPONENT_NAME %> />;
+  })
+ 
