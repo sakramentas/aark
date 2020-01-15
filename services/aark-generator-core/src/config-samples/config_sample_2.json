@@ -4,11 +4,11 @@
   "variant": "monorepo",
   "structure": [
     [
-      "test-folder/components",
+      "test-folder/components/Counter2",
       {
         "type": "react-component",
-        "template": "aark-react/component",
-        "files": ["Component.jsx", "index.js"],
+        "name": "Counter",
+        "templateId": "aark-react/component",
         "variables": {
           "COMPONENT_NAME": "Counter"
         }
