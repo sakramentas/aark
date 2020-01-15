@@ -1,3 +1,6 @@
 {
-  "extends": ["@aark/eslint-config"]
+  "extends": ["@aark/eslint-config"],
+  "rules": {
+    "no-console": "off"
+  }
 }
