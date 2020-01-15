@@ -1,23 +1,11 @@
 import path from 'path';
 import { write, dir, copy } from 'fs-jetpack';
 
-import { componentTemplate } from './templates/aark-react/component/Component.template';
-
+import { renderFromTemplate } from './renderFromTemplate';
 import config from './config-samples/config_sample_2.json';
-
-console.log('confg >>', config);
 
 const FILE_EXTENSIONS = {
   react: '.jsx',
-};
-
-const renderFromTemplate = (filePath, { type: nodeType, template }, variables) => {
-  const templatePath = `./templates/${template}`;
-  const reactTemplateFiles = `${templatePath}/Component.jsx.aark`;
-  console.log('COPYING FILE', reactTemplateFiles);
-
-  dir('new-dir');
-  copy(reactTemplateFiles, filePath);
 };
 
 export const initGenerator = () => {
@@ -30,25 +18,29 @@ export const initGenerator = () => {
     // }
 
     if (Array.isArray(nodeTuple)) {
-      const [folderPath, { files = [], template, type, variables }] = nodeTuple;
+      const [folderPath, { templateId, type, variables, name }] = nodeTuple;
+      const absoluteFolderPath = path.join(__dirname, folderPath);
+      console.log('absoluteFolderPath >>>', absoluteFolderPath);
 
       // Create Folder
       dir(folderPath);
 
       // Generate files and write content
-      files.forEach(file => {
-        if (template) {
-          // const fileExt = path.fileExtension(file);
-          const fullFilePath = path.join(folderPath, file);
 
-          renderFromTemplate(fullFilePath, { type, template }, variables);
+      if (templateId) {
+        // const fileExt = path.fileExtension(file);
 
-          // if (fileExt === FILE_EXTENSIONS[react]) {
-          // }
-        }
+        renderFromTemplate(
+          '@aark/templates-react',
+          { type, templateId, dest: absoluteFolderPath, name },
+          variables
+        );
+
+        // if (fileExt === FILE_EXTENSIONS[react]) {
+        // }
 
         // write(path.join(folderPath, file), content))
-      });
+      }
     }
   });
 };
