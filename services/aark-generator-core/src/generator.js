@@ -1,12 +1,12 @@
 import path from 'path';
-import { write, dir, copy } from 'fs-jetpack';
+import { dir } from 'fs-jetpack';
 
-import { renderFromTemplate } from './renderFromTemplate';
+import { compileFromAarkTemplate } from './helpers/compileFromAarkTemplate';
 import config from './config-samples/config_sample_2.json';
 
-const FILE_EXTENSIONS = {
-  react: '.jsx',
-};
+// const FILE_EXTENSIONS = {
+//   react: '.jsx',
+// };
 
 export const initGenerator = () => {
   const { structure = [] } = config;
@@ -30,7 +30,7 @@ export const initGenerator = () => {
       if (templateId) {
         // const fileExt = path.fileExtension(file);
 
-        renderFromTemplate(
+        compileFromAarkTemplate(
           '@aark/templates-react',
           { type, templateId, dest: absoluteFolderPath, name },
           variables

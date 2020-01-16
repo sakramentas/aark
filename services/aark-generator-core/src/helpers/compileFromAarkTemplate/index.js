@@ -1,0 +1,1 @@
+export { compileFromAarkTemplate } from './compileFromAarkTemplate';

@@ -1,0 +1,1 @@
+export { reactFactory } from './reactFactory';

@@ -1,0 +1,1 @@
+export { replaceVariablesInFiles } from './replaceVariablesInFiles';

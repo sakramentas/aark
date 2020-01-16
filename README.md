@@ -30,3 +30,5 @@ The greatest JavaScript generator
 - CLI?
 - List custom configs in the website? Like a catalog?
 - List custom presets/plugins in the website?
+
+1st use case: Generating from a pre-existent template.
