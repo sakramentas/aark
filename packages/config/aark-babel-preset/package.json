@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build:clean": "rm -rf ./build",
-    "prepublish": "yarn build:clean && aark-build-package --srcDir ./",
+    "prepare": "yarn build:clean && aark-build-package --srcDir ./",
     "postpublish": "yarn build:clean"
   },
   "dependencies": {

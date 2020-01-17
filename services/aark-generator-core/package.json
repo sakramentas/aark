@@ -8,7 +8,7 @@
   "scripts": {
     "start": "generator-core",
     "build:clean": "rm -rf ./build",
-    "prepublish": "yarn build:clean && aark-build-package --srcDir src",
+    "prepare": "yarn build:clean && aark-build-package --srcDir src",
     "postpublish": "yarn build:clean"
   },
   "bin": {
