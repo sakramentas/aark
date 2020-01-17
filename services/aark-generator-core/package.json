@@ -8,7 +8,7 @@
   "scripts": {
     "start": "generator-core",
     "build:clean": "rm -rf ./build",
-    "prepare": "yarn build:clean && aark-build-package --srcDir src",
+    "prepare": "aark-build-package --srcDir src",
     "postpublish": "yarn build:clean"
   },
   "bin": {
@@ -32,5 +32,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "783d654890006ccce33e99203959e7d0a55e8087"
+  "gitHead": "fb675ef2f23368d870ce00104433b99a57f2cdb4"
 }

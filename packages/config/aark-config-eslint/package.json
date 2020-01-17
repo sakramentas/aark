@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build:clean": "rm -rf ./build",
-    "prepare": "yarn build:clean && aark-build-package --srcDir ./",
+    "prepare": "aark-build-package --srcDir ./",
     "postpublish": "yarn build:clean"
   },
   "dependencies": {
@@ -23,5 +23,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "783d654890006ccce33e99203959e7d0a55e8087"
+  "gitHead": "fb675ef2f23368d870ce00104433b99a57f2cdb4"
 }
