@@ -6,7 +6,10 @@
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "generator-core"
+  },
+  "bin": {
+    "generator-core": "./index.js"
   },
   "dependencies": {
     "@aark/babel-preset": "^0.0.2",

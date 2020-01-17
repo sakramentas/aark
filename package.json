@@ -1,6 +1,6 @@
 {
   "name": "@aark/root",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The greatest JavaScript Generator",
   "main": "script",
   "repository": "https://github.com/sakramentas/aark",
@@ -11,7 +11,7 @@
     "bootstrap": "lerna bootstrap"
   },
   "dependencies": {
-    "@aark/eslint-config": "0.0.1",
+    "@aark/eslint-config": "0.0.2",
     "lerna": "^3.20.2"
   },
   "workspaces": [
