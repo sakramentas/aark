@@ -13,5 +13,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "783d654890006ccce33e99203959e7d0a55e8087"
+  "gitHead": "783d654890006ccce33e99203959e7d0a55e8087",
+  "dependencies": {
+    "@aark/scripts": "^0.0.3-alpha.1"
+  }
 }
