@@ -4,6 +4,11 @@
   "description": "Aark Custom Babel Presets",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
   "license": "MIT",
+  "scripts": {
+    "build:clean": "rm -rf ./build",
+    "prepublish": "yarn build:clean && aark-build-package --srcDir ./",
+    "postpublish": "yarn build:clean"
+  },
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-transform-regenerator": "^7.8.3",
