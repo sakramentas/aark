@@ -1,0 +1,17 @@
+{
+  "name": "@aark/scripts",
+  "version": "0.0.3-alpha.0",
+  "description": "Aark internal Node Scripts",
+  "license": "MIT",
+  "bin": {
+    "aark-build-package": "./build-package/index.js"
+  },
+  "directories": {
+    "build-package": "build-package"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.3",
+    "fs-extra": "^8.1.0",
+    "yargs": "^14.2.0"
+  }
+}
