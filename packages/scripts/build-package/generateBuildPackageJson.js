@@ -26,7 +26,7 @@ const generateBuildPackageJson = ({
   ...(directories && { directories }),
   ...(description && { description }),
   ...(dependencies && { dependencies }),
-  ...(publishConfig && { publishConfig }),
+  ...(publishConfig && { publishConfig: { access: publishConfig.access } }),
   ...(peerDependencies && { peerDependencies }),
 });
 
