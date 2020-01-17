@@ -8,10 +8,12 @@ const generateBuildPackageJson = ({
   main,
   files,
   version,
+  scripts,
   license,
   directories,
   description,
   dependencies,
+  publishConfig,
   peerDependencies,
 }) => ({
   ...(bin && { bin }),
@@ -19,10 +21,12 @@ const generateBuildPackageJson = ({
   ...(main && { main }),
   ...(files && { files }),
   ...(version && { version }),
+  ...(scripts && { scripts }),
   ...(license && { license }),
   ...(directories && { directories }),
   ...(description && { description }),
   ...(dependencies && { dependencies }),
+  ...(publishConfig && { publishConfig }),
   ...(peerDependencies && { peerDependencies }),
 });
 
