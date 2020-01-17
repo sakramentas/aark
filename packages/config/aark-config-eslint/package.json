@@ -21,7 +21,8 @@
     "prettier": "^1.18.2"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "build"
   },
-  "gitHead": "fb675ef2f23368d870ce00104433b99a57f2cdb4"
+  "gitHead": "004bc87086af4b214d4994c0d0d95cb59a15828e"
 }
