@@ -1,6 +1,6 @@
 {
   "name": "@aark/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Aark ESLint Configurations",
   "main": "index.js",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
