@@ -1,6 +1,6 @@
 {
   "name": "@aark/logger",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.3-alpha.1",
   "description": "Aark Logger library",
   "main": "index.js",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
