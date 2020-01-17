@@ -1,6 +1,6 @@
 {
   "name": "@aark/logger",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Aark Logger library",
   "main": "index.js",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
@@ -11,7 +11,7 @@
     "postpublish": "yarn build:clean"
   },
   "dependencies": {
-    "@aark/scripts": "^0.0.3",
+    "@aark/scripts": "0.0.4",
     "chalk": "^3.0.0",
     "npmlog": "^4.1.2"
   },
@@ -19,5 +19,5 @@
     "access": "public",
     "directory": "build"
   },
-  "gitHead": "a6f0f5a88a44921a8ab3132fb48a3882dac7e316"
+  "gitHead": "afc1e4c56531e372014d8588f72f55bed685fb7d"
 }
