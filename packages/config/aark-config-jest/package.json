@@ -1,8 +1,0 @@
-{
-  "name": "@aark/config-jest",
-  "version": "0.0.2",
-  "description": "Jest custom configurations",
-  "main": "index.js",
-  "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
-  "license": "MIT"
-}
