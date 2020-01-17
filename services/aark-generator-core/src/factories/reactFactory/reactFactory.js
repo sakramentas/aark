@@ -1,11 +1,12 @@
 import path from 'path';
 import glob from 'glob';
-import log from 'npmlog';
-import chalk from 'chalk';
 import { copy, exists } from 'fs-jetpack';
+import { aarkLogger } from '@aark/logger';
 
 import { getTemplateSettings } from '../../helpers/getTemplateSettings';
 import { replaceVariablesInFiles } from '../../helpers/replaceVariablesInFiles';
+
+const log = aarkLogger({ origin: 'generator-core' });
 
 /**
  * Template Factory for React
@@ -27,32 +28,23 @@ export const reactFactory = async (
   const templateSettings = await getTemplateSettings(reactTemplatePackageDir);
 
   if (!exists(reactTemplateFolderDir)) {
-    log.error(
-      'Aark',
-      chalk.error(`React Template not found in: ${reactTemplateFolderDir}`)
-    );
+    log('error', `React Template not found in: ${reactTemplateFolderDir}`);
   }
 
   // Copy the content to the destination.
   copy(reactTemplateFolderDir, dest, { overwrite: true });
-  log.info('Aark', chalk.blue(`Copied "${type}" template to your local project...`));
+  log('info', `Copied "${type}" template to your local project...`);
 
   // List folder tree in destination.
   return glob('**/*.aark', { cwd: dest, realpath: true }, (error, files = []) => {
     if (error) return log.error('Aark', error);
 
     files.forEach(file => {
-      replaceVariablesInFiles(file, { variables, name }, templateSettings);
+      replaceVariablesInFiles(file, { variables, name }, templateSettings.componentName);
       compiledFiles.push(file);
     });
-    log.info(
-      'Aark',
-      chalk.blue(`Replaced variables "${Object.keys(variables)}" inside the files...`)
-    );
+    log('info', `Replaced variables "${Object.keys(variables)}" inside the files...`);
 
-    return log.info(
-      'Aark',
-      chalk.green(`Files generated successfully: ${compiledFiles.join('\n')}`)
-    );
+    return log('info', `Files generated successfully: ${compiledFiles.join('\n')}`);
   });
 };
