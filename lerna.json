@@ -14,8 +14,7 @@
         "*.md",
         "*.txt",
         "test/**",
-        "**/test/**",
-        "@(!(built-in-modules|built-ins|plugins|package)).json"
+        "**/test/**"
       ]
     }
   }
