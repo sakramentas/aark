@@ -20,6 +20,8 @@ const defaultIgnorePattern = [
   `node_modules`,
   `coverage`,
   `jest-cache`,
+  'build',
+  'dist'
 ];
 
 nodeArgs.push(srcDir);
