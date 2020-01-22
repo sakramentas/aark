@@ -1,2 +1,2 @@
-## @aark/config-eslint
+## @aark/eslint-config
 Aark ESLint Configurations

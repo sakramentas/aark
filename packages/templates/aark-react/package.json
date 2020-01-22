@@ -14,7 +14,7 @@
     "access": "public",
     "directory": "build"
   },
-  "gitHead": "b555fe9f9d5da4f5fe9db7f418a7963877b684a3",
+  "gitHead": "1ccc05486a2002849e39fcfdb9b91bde526a34c2",
   "dependencies": {
     "@aark/scripts": "^0.0.5"
   }
