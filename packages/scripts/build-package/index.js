@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const path = require('path');
 const { argv } = require('yargs');
-const { copySync } = require('./copySync');
 const { writeJsonSync } = require('fs-extra');
 const { spawnSync } = require('child_process');
 const { generateBuildPackageJson } = require('./generateBuildPackageJson');
@@ -12,30 +11,24 @@ process.env.NODE_ENV = 'production';
 process.on('unhandledRejection', err => {
   throw err;
 });
-
 const nodeArgs = [];
 const srcDir = path.resolve(process.cwd(), argv.srcDir || 'src');
 const outDir = path.resolve(process.cwd(), argv.outDir || 'build');
 const defaultIgnorePattern = [
-  `node_modules`,
+  `node_modules/`,
   `coverage`,
   `jest-cache`,
   'build',
-  'dist'
+  'dist',
+  'package.json'
 ];
 
 nodeArgs.push(srcDir);
 nodeArgs.push('--out-dir', outDir);
-// nodeArgs.push('--copy-files');
 nodeArgs.push('--presets', '@aark/babel-preset/node');
 nodeArgs.push('--ignore', argv.ignore || defaultIgnorePattern.join(','));
 nodeArgs.push('--no-babelrc');
-
-copySync(srcDir, outDir, filePath => {
-  const ext = path.extname(filePath);
-  return ext !== '.js' && ext !== '.jsx';
-});
-
+nodeArgs.push('--copy-files');
 
 const { signal: spawnResultSignal, status: spawnResultStatus } = spawnSync(
   'babel',
