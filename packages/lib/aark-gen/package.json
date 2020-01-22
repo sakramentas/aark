@@ -1,0 +1,26 @@
+{
+  "name": "aark-gen",
+  "version": "0.0.4",
+  "description": "Aark Generator Scripts Router",
+  "main": "index.js",
+  "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
+  "license": "MIT",
+  "scripts": {
+    "build:clean": "rm -rf ./build",
+    "prepare": "aark-build-package --srcDir src -- --out-file index.js",
+    "postpublish": "yarn build:clean",
+    "start": "node ./build/index.js"
+  },
+  "bin": {
+    "aark-gen-start": "./index.js"
+  },
+  "dependencies": {
+    "@aark/babel-preset": "0.0.4",
+    "@aark/generator-core": "0.0.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "build"
+  },
+  "gitHead": "86acdc3fb2c21aa6c93d35826cf08345a30e10c3"
+}
