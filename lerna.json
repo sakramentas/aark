@@ -3,7 +3,7 @@
   "useWorkspaces": true,
   "version": "0.0.5",
   "packages": [
-    "packages/config/**",
+    "packages/config/aark-babel-preset",
     "packages/lib/**",
     "packages/templates/**",
     "services/**"
