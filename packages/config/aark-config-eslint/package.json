@@ -1,6 +1,6 @@
 {
   "name": "@aark/eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Aark ESLint Configurations",
   "main": "index.js",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
@@ -11,7 +11,7 @@
     "postpublish": "yarn build:clean"
   },
   "dependencies": {
-    "@aark/scripts": "0.0.4",
+    "@aark/scripts": "^0.0.5",
     "@babel/core": "^7.0.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",

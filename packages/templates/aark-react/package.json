@@ -1,6 +1,6 @@
 {
   "name": "@aark/templates-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Oficial Aark React Templates",
   "main": "index.js",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
@@ -16,6 +16,6 @@
   },
   "gitHead": "b555fe9f9d5da4f5fe9db7f418a7963877b684a3",
   "dependencies": {
-    "@aark/scripts": "0.0.4"
+    "@aark/scripts": "^0.0.5"
   }
 }
