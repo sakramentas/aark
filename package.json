@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "clean-builds": "rimraf ./services/**/build ./packages/**/build",
     "bootstrap": "lerna bootstrap"
   },
   "dependencies": {
