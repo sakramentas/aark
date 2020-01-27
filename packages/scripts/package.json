@@ -1,6 +1,6 @@
 {
   "name": "@aark/scripts",
-  "version": "0.0.6-alpha.1",
+  "version": "0.0.6-alpha.2",
   "description": "Aark internal Node Scripts",
   "license": "MIT",
   "bin": {
@@ -18,5 +18,5 @@
     "access": "public",
     "directory": "build"
   },
-  "gitHead": "16e9c85961d99d9490425c53bf03ce3c5c81986e"
+  "gitHead": "5e74ea9d82f5ae790acaa6933c02284934092c38"
 }
