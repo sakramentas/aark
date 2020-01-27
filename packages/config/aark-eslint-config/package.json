@@ -1,6 +1,6 @@
 {
   "name": "@aark/eslint-config",
-  "version": "0.0.6-alpha.0",
+  "version": "0.0.6-alpha.1",
   "description": "Aark ESLint Configurations",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "postpublish": "yarn build:clean"
   },
   "dependencies": {
-    "@aark/scripts": "0.0.6-alpha.0",
+    "@aark/scripts": "0.0.6-alpha.1",
     "@babel/core": "^7.0.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
@@ -24,5 +24,5 @@
     "access": "public",
     "directory": "build"
   },
-  "gitHead": "8e76de76c877198ded939742b4e83a0bbfc14a4a"
+  "gitHead": "16e9c85961d99d9490425c53bf03ce3c5c81986e"
 }

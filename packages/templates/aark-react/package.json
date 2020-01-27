@@ -1,6 +1,6 @@
 {
   "name": "@aark/templates-react",
-  "version": "0.0.6-alpha.0",
+  "version": "0.0.6-alpha.1",
   "description": "Oficial Aark React Templates",
   "main": "index.js",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
@@ -14,8 +14,8 @@
     "access": "public",
     "directory": "build"
   },
-  "gitHead": "8e76de76c877198ded939742b4e83a0bbfc14a4a",
+  "gitHead": "16e9c85961d99d9490425c53bf03ce3c5c81986e",
   "dependencies": {
-    "@aark/scripts": "0.0.6-alpha.0"
+    "@aark/scripts": "0.0.6-alpha.1"
   }
 }
