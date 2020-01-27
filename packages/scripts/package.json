@@ -1,8 +1,9 @@
 {
   "name": "@aark/scripts",
-  "version": "0.0.6-alpha.2",
+  "version": "0.0.6-alpha.3",
   "description": "Aark internal Node Scripts",
   "license": "MIT",
+  "private": true,
   "bin": {
     "aark-build-package": "./build-package/index.js"
   },
@@ -18,5 +19,5 @@
     "access": "public",
     "directory": "build"
   },
-  "gitHead": "5e74ea9d82f5ae790acaa6933c02284934092c38"
+  "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913"
 }
