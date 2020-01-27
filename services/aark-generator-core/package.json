@@ -17,7 +17,6 @@
   "dependencies": {
     "@aark/babel-preset": "0.0.6-alpha.3",
     "@aark/logger": "0.0.6-alpha.3",
-    "@aark/scripts": "0.0.6-alpha.3",
     "@aark/templates-react": "0.0.6-alpha.3",
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
@@ -32,6 +31,9 @@
   "publishConfig": {
     "access": "public",
     "directory": "build"
+  },
+  "devDependencies": {
+    "@aark/scripts": "0.0.6-alpha.3"
   },
   "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913"
 }

@@ -10,13 +10,15 @@
     "postpublish": "yarn build:clean"
   },
   "dependencies": {
-    "@aark/scripts": "0.0.6-alpha.3",
     "@babel/core": "^7.0.0",
     "@babel/plugin-transform-regenerator": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "^7.8.3",
     "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@aark/scripts": "0.0.6-alpha.3"
   },
   "publishConfig": {
     "access": "public",

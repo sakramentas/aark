@@ -9,7 +9,10 @@
   "private": true,
   "scripts": {
     "clean-builds": "rimraf ./services/**/build ./packages/**/build",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "publish:debug": "yarn publish:latest -- --dist-tag=debug --no-push",
+    "publish:latest": "lerna publish --exact --concurrency 1 --force-publish",
+    "publish:next": "yarn run publish:latest -- --dist-tag=next"
   },
   "dependencies": {
     "@aark/eslint-config": "0.0.2",

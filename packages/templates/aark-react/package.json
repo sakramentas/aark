@@ -15,7 +15,7 @@
     "directory": "build"
   },
   "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913",
-  "dependencies": {
+  "devDependencies": {
     "@aark/scripts": "0.0.6-alpha.3"
   }
 }
