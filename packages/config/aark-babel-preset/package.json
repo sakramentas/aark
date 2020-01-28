@@ -1,6 +1,6 @@
 {
   "name": "@aark/babel-preset",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Aark Custom Babel Presets",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
-    "@aark/scripts": "0.0.7"
+    "@aark/scripts": "0.0.8"
   },
   "publishConfig": {
     "access": "public",
