@@ -1,6 +1,6 @@
 {
   "name": "@aark/scripts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Aark internal Node Scripts",
   "license": "MIT",
   "private": true,

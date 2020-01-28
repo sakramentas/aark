@@ -1,6 +1,6 @@
 {
   "name": "@aark/generator-core",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Aark Generator Core",
   "main": "index.js",
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
@@ -15,9 +15,9 @@
     "generator-core": "src/index.js"
   },
   "dependencies": {
-    "@aark/babel-preset": "0.0.6",
-    "@aark/logger": "0.0.6",
-    "@aark/templates-react": "0.0.6",
+    "@aark/babel-preset": "0.0.7",
+    "@aark/logger": "0.0.7",
+    "@aark/templates-react": "0.0.7",
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
     "@babel/register": "^7.8.3",
@@ -34,7 +34,7 @@
     "directory": "build"
   },
   "devDependencies": {
-    "@aark/scripts": "0.0.6",
+    "@aark/scripts": "0.0.7",
     "yargs": "^15.1.0"
   },
   "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913"
