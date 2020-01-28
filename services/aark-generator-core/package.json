@@ -6,13 +6,13 @@
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
   "license": "MIT",
   "scripts": {
-    "start": "generator-core",
+    "start": "node index.js",
     "build:clean": "rm -rf ./build",
     "prepublish": "aark-build-package --srcDir src",
     "postpublish": "yarn build:clean"
   },
   "bin": {
-    "generator-core": "./index.js"
+    "generator-core": "src/index.js"
   },
   "dependencies": {
     "@aark/babel-preset": "0.0.6",
@@ -21,6 +21,7 @@
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
     "@babel/register": "^7.8.3",
+    "axios": "^0.19.2",
     "chalk": "^3.0.0",
     "dotenv": "^8.2.0",
     "fs-jetpack": "^2.2.3",
@@ -33,7 +34,8 @@
     "directory": "build"
   },
   "devDependencies": {
-    "@aark/scripts": "0.0.6"
+    "@aark/scripts": "0.0.6",
+    "yargs": "^15.1.0"
   },
   "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913"
 }

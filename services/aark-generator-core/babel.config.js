@@ -3,6 +3,6 @@ module.exports = api => {
   return {
     retainLines: true,
     presets: ['@aark/babel-preset/node'],
-    ignore: ['./**/*.jsx.aark'],
+    ignore: ['./**/*.jsx.aark']
   };
 };

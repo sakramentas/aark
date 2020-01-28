@@ -1,46 +1,39 @@
 import path from 'path';
 import { dir } from 'fs-jetpack';
+import axios from 'axios';
 
 import { compileFromAarkTemplate } from './helpers/compileFromAarkTemplate';
-import config from './config-samples/config_sample_2.json';
 
-// const FILE_EXTENSIONS = {
-//   react: '.jsx',
-// };
+const fetchConfig = url => {
+  return axios
+    .get(url)
+    .then(({ data }) => data)
+    .catch(err => console.error(err));
+};
 
-export const initGenerator = () => {
-  const { structure = [] } = config;
+export const initGenerator = ({ args }) => {
+  if (!args.config) throw new Error('Please specify a valid Aark config file.');
 
-  structure.forEach(nodeTuple => {
-    // When only a string is given.
-    // if (typeof folder === 'string') {
-    //   write('./test-folder/test-file.js', CONTENT_TO_WRITE);
-    // }
+  fetchConfig(args.config).then(config => {
+    const { structure = [] } = config;
 
-    if (Array.isArray(nodeTuple)) {
-      const [folderPath, { templateId, type, variables, name }] = nodeTuple;
-      const absoluteFolderPath = path.join(__dirname, folderPath);
-      console.log('absoluteFolderPath >>>', absoluteFolderPath);
+    structure.forEach(nodeTuple => {
+      if (Array.isArray(nodeTuple)) {
+        const [folderPath, { templateId, type, variables, name }] = nodeTuple;
+        const absoluteFolderPath = path.join(process.cwd(), folderPath);
 
-      // Create Folder
-      dir(folderPath);
+        // Create Folder
+        dir(folderPath);
 
-      // Generate files and write content
-
-      if (templateId) {
-        // const fileExt = path.fileExtension(file);
-
-        compileFromAarkTemplate(
-          '@aark/templates-react',
-          { type, templateId, dest: absoluteFolderPath, name },
-          variables
-        );
-
-        // if (fileExt === FILE_EXTENSIONS[react]) {
-        // }
-
-        // write(path.join(folderPath, file), content))
+        // Generate files and write content
+        if (templateId) {
+          compileFromAarkTemplate(
+            '@aark/templates-react',
+            { type, templateId, dest: absoluteFolderPath, name },
+            variables
+          );
+        }
       }
-    }
+    });
   });
 };
