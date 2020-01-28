@@ -1,5 +1,6 @@
-const { initGenerator } = require('./generator');
+#!/usr/bin/env node
 const { argv } = require('yargs');
+const { initGenerator } = require('./generator');
 
 initGenerator({
   args: argv,

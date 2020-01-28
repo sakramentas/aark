@@ -12,7 +12,7 @@
     "postpublish": "yarn build:clean"
   },
   "bin": {
-    "generator-core": "src/index.js"
+    "generator-core": "index.js"
   },
   "dependencies": {
     "@aark/babel-preset": "0.0.7",
@@ -27,15 +27,15 @@
     "fs-jetpack": "^2.2.3",
     "glob": "^7.1.6",
     "mustache": "^3.2.1",
-    "npmlog": "^4.1.2"
+    "npmlog": "^4.1.2",
+    "yargs": "^15.1.0"
   },
   "publishConfig": {
     "access": "public",
     "directory": "build"
   },
   "devDependencies": {
-    "@aark/scripts": "0.0.7",
-    "yargs": "^15.1.0"
+    "@aark/scripts": "0.0.7"
   },
   "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913"
 }
