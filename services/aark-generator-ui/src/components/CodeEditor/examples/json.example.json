@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "type": "project",
+  "variant": "monorepo",
+  "structure": [
+    [
+      "test-folder/components/Counter2",
+      {
+        "type": "react-component",
+        "name": "Counter",
+        "templateId": "aark-react/component",
+        "variables": {
+          "COMPONENT_NAME": "Counter"
+        }
+      }
+		],
+		[
+      "test-folder/components/AnotherComp",
+      {
+        "type": "react-component",
+        "name": "AnotherComp",
+        "templateId": "aark-react/component",
+        "variables": {
+          "COMPONENT_NAME": "AnotherComp"
+        }
+      }
+		]
+  ]
+}
