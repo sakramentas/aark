@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 require('@babel/register')({
   cache: false,
   presets: ['@aark/babel-preset/node'],

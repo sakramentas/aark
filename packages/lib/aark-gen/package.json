@@ -6,6 +6,7 @@
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
   "license": "MIT",
   "scripts": {
+    "build": "webpack --mode production --env prod --target node",
     "build:clean": "rm -rf ./build",
     "prepublish": "aark-build-package --srcDir src -- --out-file index.js",
     "postpublish": "yarn build:clean",
@@ -23,5 +24,9 @@
     "access": "public",
     "directory": "build"
   },
-  "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913"
+  "gitHead": "413b4bf55af08620e66e08a2ab9daf6e8fec9913",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
 }
