@@ -1,0 +1,14 @@
+[ignore]
+; ../../node_modules/**
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+; module.name_mapper='^\([^\.].*\)$' -> '<PROJECT_ROOT>/src/\1'
+; module.name_mapper='^\([^\.].*\)$' -> '<PROJECT_ROOT>/\1'
+; module.system.node.allow_root_relative=true
+; module.system.node.root_relative_dirname=../../
+[strict]
