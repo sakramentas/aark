@@ -21,11 +21,17 @@ export const generateTreeItems = (
     const childObj: TreeObject = treeObj[childKey];
 
     if (!Object.keys(childObj).length) {
-      return <TreeItem nodeId={currentNodeIdString} label={childKey} key={childKey} />;
+      return (
+        <TreeItem
+          label={childKey}
+          key={childKey}
+          nodeId={childKey + currentNodeIdString}
+        />
+      );
     }
 
     return (
-      <TreeItem nodeId={currentNodeIdString} label={childKey} key={childKey}>
+      <TreeItem nodeId={childKey + currentNodeIdString} label={childKey} key={childKey}>
         {generateTreeItems(childObj, currentNodeId + 1)}
       </TreeItem>
     );
