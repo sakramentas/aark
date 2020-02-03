@@ -5,11 +5,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import TreeView from '@material-ui/lab/TreeView';
 
 import {
-  TreeObj,
   generateTreeItems,
   AarkConfigStructure,
   generateFolderTreeObject,
 } from './helpers';
+import type { TreeObj } from './helpers';
 
 export const FolderStructure = ({
   structure,
