@@ -7,6 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "flow": "flow",
     "clean-builds": "rimraf ./services/**/build ./packages/**/build",
     "bootstrap": "lerna bootstrap",
     "publish:debug": "yarn publish:latest -- --dist-tag=debug --no-push",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "@aark/eslint-config": "0.0.6",
+    "flow-bin": "^0.117.0",
     "lerna": "^3.20.2"
   },
   "workspaces": [
@@ -22,6 +24,7 @@
     "services/**"
   ],
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "flow-typed": "^2.6.2"
   }
 }
