@@ -1,6 +1,5 @@
-const { argv } = require('yargs');
-const { initGenerator } = require('./generator');
+export { initGenerator } from './generator';
 
-initGenerator({
-  args: argv,
-});
+// initGenerator({
+//   args: argv,
+// });

@@ -6,7 +6,7 @@
   "author": "Lucas Sacramento <lucas.arki@gmail.com> (https://github.com/sakramentas)",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production --env prod --target node",
+    "build": "webpack --mode production --env prod --target node --config ../../config/aark-webpack-config/server/webpack.config.js",
     "build:clean": "rm -rf ./build",
     "prepublish": "aark-build-package --srcDir src -- --out-file index.js",
     "postpublish": "yarn build:clean",
@@ -14,11 +14,16 @@
   },
   "bin": {
     "aark-gen-start": "./index.js",
-    "create": "./index.js"
+    "create": "index.js"
   },
   "dependencies": {
     "@aark/babel-preset": "0.0.8",
-    "@aark/generator-core": "0.0.8"
+    "@aark/generator-core": "0.0.8",
+    "@aark/webpack-config": "0.0.8",
+    "@babel/register": "^7.8.3",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "yargs": "^15.1.0"
   },
   "publishConfig": {
     "access": "public",
