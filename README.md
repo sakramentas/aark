@@ -1,6 +1,9 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
-# aark
-Powerful, customisable and data-driven project generator
+
+<span align="center">
+<h1>aark</h1>
+Powerful, data-driven and customisable project generator
+</span>
 
 ## CLI
 ### Generate structure from remote declarative config
@@ -93,7 +96,6 @@ Aark Generator Core
 * Looks for the hash in database, retrieves the config and generates the files.
 * User can also use a local config
 
-## Whiteboard
 - Add functionality to make possible to run custom templates?
 - CLI?
 - List custom configs in the website? Like a catalog?
