@@ -9,7 +9,7 @@
 ## CLI
 ### Generate structure from remote declarative config
 1. Create a valid Aark JSON
-```
+```json
 {
   "version": "0.0.1",
   "type": "project",
@@ -44,7 +44,7 @@ $ npx aark-gen --fromUrl <url>
 ```
 
 Example:
-```sh
+```bash
 $ npx aark-gen --fromUrl https://gist.githubusercontent.com/sakramentas/9f7d95118cd1e6bd30463ad063294f9b/raw/3d022ac7ba2ac43834f75cff57506f96dc6f69ea/config-1.aark.json
 ```
 
