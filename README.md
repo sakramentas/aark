@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna logo" />
 </p>
 <p align="center">
-  Powerful, data-driven and customisable project generator
+  Powerful data-driven project generator
 </p>
 
 ## CLI
