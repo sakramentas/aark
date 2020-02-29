@@ -39,17 +39,16 @@ Powerful, customisable and data-driven project generator
 $ npx aark-gen --fromUrl <url>
 ```
 
+Example:
+```sh
+$ npx aark-gen --fromUrl https://gist.githubusercontent.com/sakramentas/9f7d95118cd1e6bd30463ad063294f9b/raw/3d022ac7ba2ac43834f75cff57506f96dc6f69ea/config-1.aark.json
+```
+
 ### Quick generator from CLI
 #### Generate a component
 Run
 ```sh
 $ npx aark-gen --type component --name ComponentName
-```
-
-
-Example:
-```sh
-$ npx aark-gen --fromUrl https://gist.githubusercontent.com/sakramentas/9f7d95118cd1e6bd30463ad063294f9b/raw/3d022ac7ba2ac43834f75cff57506f96dc6f69ea/config-1.aark.json
 ```
 
 ## Packages
@@ -69,15 +68,14 @@ Aark ESLint Configurations
 #### :small_orange_diamond: @aark/generator-core
 Aark Generator Core
 
+# Whiteboard
+## Idea
 ```
 -> Website with UI
 -> Generates a JSON/yaml
 -> Run `npx aark-gen xfcxc82323hzx23`
 -> Script generates folder structure and files based on config
 ```
-
-# Whiteboard
-## Idea
 ### 1. Website with UI
 * Generate a Project
 ```
