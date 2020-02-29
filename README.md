@@ -1,5 +1,74 @@
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 # aark
-The greatest JavaScript generator
+Powerful, customisable and data-driven project generator
+
+## CLI
+### Generate structure from remote declarative config
+1. Create a valid Aark JSON
+```
+{
+  "version": "0.0.1",
+  "type": "project",
+  "variant": "monorepo",
+  "structure": [
+    [
+      "packages/components/Component1",
+      {
+        "type": "react-component",
+        "name": "Component1",
+        "templateId": "aark-react/component",
+        "variables": {
+          "COMPONENT_NAME": "Component1"
+        }
+      }
+    ],
+    [
+      "packages/lib/lib-name",
+      {
+        "type": "package",
+        "name": "lib-name",
+        "templateId": "aark-js/package"
+      }
+    ]
+  ]
+}
+```
+
+2. Run
+```sh
+$ npx aark-gen --fromUrl <url>
+```
+
+### Quick generator from CLI
+#### Generate a component
+Run
+```sh
+$ npx aark-gen --type component --name ComponentName
+```
+
+
+Example:
+```sh
+$ npx aark-gen --fromUrl https://gist.githubusercontent.com/sakramentas/9f7d95118cd1e6bd30463ad063294f9b/raw/3d022ac7ba2ac43834f75cff57506f96dc6f69ea/config-1.aark.json
+```
+
+## Packages
+#### :small_blue_diamond: @aark/babel-preset
+Aark Custom Babel Presets
+
+#### :small_blue_diamond: @aark/templates-react
+Oficial Aark React Templates
+
+#### :small_blue_diamond: @aark/logger
+Aark Logger library
+
+#### :small_blue_diamond: @aark/eslint-config
+Aark ESLint Configurations
+
+## Services
+#### :small_orange_diamond: @aark/generator-core
+Aark Generator Core
+
 ```
 -> Website with UI
 -> Generates a JSON/yaml
@@ -7,6 +76,7 @@ The greatest JavaScript generator
 -> Script generates folder structure and files based on config
 ```
 
+# Whiteboard
 ## Idea
 ### 1. Website with UI
 * Generate a Project
