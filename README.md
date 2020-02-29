@@ -1,8 +1,12 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
+
+<h1 align="center">aark</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna logo" />
+</p>
 <span align="center">
-<h1>aark</h1>
-Powerful, data-driven and customisable project generator
+  Powerful, data-driven and customisable project generator
 </span>
 
 ## CLI
