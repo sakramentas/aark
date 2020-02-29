@@ -1,13 +1,10 @@
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
-
-
 <h1 align="center">aark</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna logo" />
 </p>
-<span align="center">
+<p align="center">
   Powerful, data-driven and customisable project generator
-</span>
+</p>
 
 ## CLI
 ### Generate structure from remote declarative config
