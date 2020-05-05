@@ -6,6 +6,37 @@
   Powerful data-driven project generator
 </p>
 
+### Lib in progress...
+
+Aark is a declarative, modular and customizable generator. With Aark you’re able to generate since just a single file (such as a React component or a function) or a whole new project with folders and dependencies totally out of the box.
+
+Aark is mainly composed by two pillars: a generator config and templates
+
+## Generator config
+
+
+## Templates
+::A template can also have an Aark config and import other templates::
+
+---
+# Usage
+
+### Generate a new React component
+`npx aark-gen —-template aark-react/component —-variables NAME=ComponentName `
+
+### Generate a new Monorepo
+`npx aark-gen —-template aark/monorepo —-variables NAME=Monorepo `
+
+### Generate a new Express API
+`npx aark-gen —-template aark-react/component —-variables COMPONENTS=Users,Products,Purchases `
+
+### Generate from a remote config
+`npx aark-gen —-fromUrl http://templateurl.com`
+
+
+---
+# Creating an Aark Template
+
 ## CLI
 ### Generate structure from remote declarative config
 1. Create a valid Aark JSON
